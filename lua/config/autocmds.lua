@@ -3,3 +3,5 @@
 -- Add any additional autocmds here
 --
 vim.opt.conceallevel = 2
+
+require("sg").setup({})
