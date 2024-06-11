@@ -20,38 +20,10 @@ return {
     workspaces = {
       {
         name = "personal",
-        path = "~/Google Drive/My Drive/vault/",
+        path = "~/Library/CloudStorage/GoogleDrive-amirkiankaveh@gmail.com/My Drive/vault",
       },
-      {
-        name = "work",
-        path = "~/vaults/work",
-      },
-    },
-    -- Optional, completion of wiki links, local markdown links, and tags using nvim-cmp.
-    completion = {
-      -- Set to false to disable completion.
-      nvim_cmp = true,
-      -- Trigger completion at 2 chars.
-      min_chars = 2,
     },
 
-    -- Optional, configure key mappings. These are the defaults. If you don't want to set any keymappings this
-    -- way then set 'mappings = {}'.
-    mappings = {
-      -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
-      ["gf"] = {
-        action = function()
-          return require("obsidian").util.gf_passthrough()
-        end,
-        opts = { noremap = false, expr = true, buffer = true },
-      },
-      -- Toggle check-boxes.
-      ["<leader>ch"] = {
-        action = function()
-          return require("obsidian").util.toggle_checkbox()
-        end,
-        opts = { buffer = true },
-      },
-    },
+    -- see below for full list of options 👇
   },
 }
