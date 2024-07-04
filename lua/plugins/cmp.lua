@@ -55,6 +55,7 @@ return {
       },
       sources = cmp.config.sources({
         { name = "cody" },
+        { name = "obsidian" },
         { name = "codeium" },
         { name = "nvim_lsp" },
         { name = "path" },

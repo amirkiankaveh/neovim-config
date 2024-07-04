@@ -1,7 +1,7 @@
 return {
   "epwalsh/obsidian.nvim",
   version = "*", -- recommended, use latest release instead of latest commit
-  lazy = true,
+  lazy = false,
   ft = "markdown",
   -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
   -- event = {
@@ -20,10 +20,23 @@ return {
     workspaces = {
       {
         name = "personal",
-        path = "~/Library/CloudStorage/GoogleDrive-amirkiankaveh@gmail.com/My Drive/vault",
+        path = "~/Vault/",
       },
     },
-
+    completion = {
+      -- Set to false to disable completion.
+      nvim_cmp = true,
+      -- Trigger completion at 2 chars.
+      min_chars = 2,
+    },
     -- see below for full list of options 👇
+    -- Optional, for templates (see below).
+    -- templates = {
+    --   folder = "Templates",
+    --   date_format = "%Y-%m-%d",
+    --   time_format = "%H:%M",
+    --   -- A map for custom variables, the key should be the variable and the value a function
+    --   substitutions = {},
+    -- },
   },
 }
