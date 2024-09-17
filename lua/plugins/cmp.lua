@@ -59,6 +59,8 @@ return {
         { name = "codeium" },
         { name = "nvim_lsp" },
         { name = "path" },
+        { name = "html" },
+        { name = "tailwind" },
         { name = "cspell" },
         { name = "luasnip" },
       }, {
