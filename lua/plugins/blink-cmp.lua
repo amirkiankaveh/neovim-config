@@ -21,6 +21,7 @@ return {
       preset = "default",
       ["<Tab>"] = { "select_next", "fallback" },
       ["<S-Tab>"] = { "select_prev", "fallback" },
+      ["<Enter>"] = { "accept", "fallback" },
     },
 
     appearance = {
