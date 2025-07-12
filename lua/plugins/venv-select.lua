@@ -1,6 +1,7 @@
 return {
   "linux-cultist/venv-selector.nvim",
   dependencies = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim" },
+  version = "*", -- Recommended, use latest release instead of latest commit
   opts = {
     -- Your options go here
     -- name = "venv",
